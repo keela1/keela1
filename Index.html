@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ozanga Dream Coin</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Ozanga Dream Coin</h1>
+    <button id="connect">Connect Wallet</button>
+    <p><strong>Wallet:</strong> <span id="wallet">Not connected</span></p>
+    <p><strong>OZA Balance:</strong> <span id="balance">0</span></p>
+
+    <h2>Send OZA</h2>
+    <input type="text" id="recipient" placeholder="Recipient address" />
+    <input type="number" id="amount" placeholder="Amount in OZA" />
+    <button id="send">Send</button>
+    <p id="status"></p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
